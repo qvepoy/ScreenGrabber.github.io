@@ -54,12 +54,43 @@ body
 .head
 	height: 256px
 	background-color: $blue
+	box-shadow: 0px 0px 10px
 
 .title
 	color: $white
-	font-size: 50px
+	h1
+		font-size: 50px
+		margin: 0
+		line-height: 50px
+	p
+		font-size: 12px
+		margin: 0
+
+.image
+	height: 168px
 
 .block
 	display: inline-block
+
+table
+	height: 256px
+	width: 100%
+	td:first-child
+		width: 200px
+
+.info
+	color: $white
+	text-align: right
+	.info_part
+		p
+			display: inline
+		img
+			height: 24px
+			margin: 6px
+
+	a
+		color: $white
+	a,p
+		margin: 0
 
 @import "media" // Всегда в конце
