@@ -55,6 +55,7 @@ body
 	height: 256px
 	background-color: $blue
 	box-shadow: 0px 0px 10px
+	margin-top: 50px
 
 .title
 	color: $white
@@ -68,6 +69,12 @@ body
 
 .image
 	height: 168px
+	transition: 0.5s
+
+.image:hover
+	transform: translate(0px,-5px)
+	transition: 0.5s
+	will-change: transform
 
 .block
 	display: inline-block
@@ -82,15 +89,31 @@ table
 	color: $white
 	text-align: right
 	.info_part
+		border-right: 3px solid $white
+		margin: 3px 5px
+		padding-right: 5px
+		transition: 0.5s
 		p
+			cursor: default
 			display: inline
 		img
 			height: 24px
-			margin: 6px
-
+			margin: 2px
+	.info_part:hover
+		border-right: 13px solid $white
+		transition: 0.5s
 	a
 		color: $white
+		transition: 0.5s
 	a,p
+		font-size: 14px
 		margin: 0
+
+.content
+	height: 400px
+	background-color: $blue
+	box-shadow: 0px 0px 10px
+	margin-top: 50px
+
 
 @import "media" // Всегда в конце
