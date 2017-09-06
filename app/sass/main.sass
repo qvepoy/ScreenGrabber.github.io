@@ -55,8 +55,13 @@ body
 
 .head
 	height: 256px
-	margin-top: 50px
-	margin-bottom: 50px
+	margin-bottom: $distanse
+	table
+		height: 256px
+		width: 100%
+		td:first-child
+			width: 200px
+	//margin-top: 25px
 
 .title
 	color: $white
@@ -80,11 +85,7 @@ body
 .block
 	display: inline-block
 
-table
-	height: 256px
-	width: 100%
-	td:first-child
-		width: 200px
+
 
 .info
 	color: $white
@@ -112,7 +113,7 @@ table
 
 .content
 	flex: 1 0 auto
-	margin-bottom: 50px
+	margin-bottom: $distanse
 	padding-bottom: 100px
 	.feature
 		margin-top: 100px
@@ -124,7 +125,43 @@ table
 
 .background
 	background-color: $blue
-	box-shadow: 0px 0px 10px
+	box-shadow: $materialShadow
+
+.links
+	padding: 25px 0
+	margin-bottom: $distanse
+	.link
+		text-align: center
+		vertical-align: middle
+		table
+			display: block
+			text-align: center
+		a
+			font-size: 20px
+			color: $blue
+			text-decoration: none
+			font-weight: bold
+		a:hover
+			text-decoration: none
+		img
+			height: 24px
+			margin: 2px 2px 2px 10px
+			//padding-right: 10px
+		background-color: $white
+		cursor: pointer
+		user-select: none
+		padding: 10px
+		border-radius: 3px
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+  	transition: 0.5s
+	.link:hover
+		transform: translate(0px,-2px)
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+		transition: 0.5s
+	.link:active
+		transform: translate(0px, 2px)
+		box-shadow: none
+		transition: 0.2s
 
 .footer
 	height: 30px
@@ -143,19 +180,21 @@ table
 
 .content2
 	padding: 50px 0
-	margin-bottom: 50px
+	margin-bottom: $distanse
 	.text
 		margin-bottom: 25px
-		border-bottom: 3px solid $white
 		p
 			color: $white
 			text-align: center
 			font-size: 24px
 			margin-bottom: 20px
 	.features
+		border-top: 2px solid $white
 		text-align: center
+		padding-top: 20px
 		color: $white
 		p
 			margin-bottom: 20px
+
 
 @import "media" // Всегда в конце
