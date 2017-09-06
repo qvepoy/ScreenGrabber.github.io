@@ -1,5 +1,6 @@
 $(function() {
 	// Custom JS
+  Onclick();
   GetReleases("qvepoy/ScreenGrabber");
 });
 
@@ -30,6 +31,11 @@ function GetReleases(repo) {
         $('.lastSize').text("Size : " + lastSize + " Kb");
         $(".lastDownload").attr("href", lastLink);
     });
+}
 
-
+function Onclick() {
+  var something = document.getElementById('donate');
+  $( "#donate" ).click(function() {
+    $( "#donates" ).toggleClass('hidden');
+  });
 }
