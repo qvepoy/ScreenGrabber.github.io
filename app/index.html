@@ -17,6 +17,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
+
+
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -65,7 +67,7 @@
 								<div class="info_part">
 									<a class="github" href="https://github.com/qvepoy/ScreenGrabber">
 										Source on Github
-										<img src="img/icons/github-logo.png" alt="">
+										<img class="svg githubimg" src="img/svg/github.svg" alt="">
 									</a>
 								</div>
 							</td>
@@ -81,21 +83,21 @@
 						Download
 						<p>for Windows 7+</p>
 					</a>
-					<img src="img/buttons/windows.png" alt="">
+					<img src="img/svg/windows.svg" alt="">
 				</div>
 				<div class="link">
 					<a href="https://github.com/qvepoy/ScreenGrabber">
 						Source
 						<p>Github repository</p>
 					</a>
-					<img src="img/buttons/git.png" alt="">
+					<img src="img/svg/github.svg" alt="">
 				</div>
 				<div class="link" id="donate">
 					<a href="#">
 						Donate
 						<p>PayPal</p>
 					</a>
-					<img src="img/buttons/donate.png" alt="">
+					<img src="img/svg/donate.svg" alt="">
 				</div>
 		</div>
 
@@ -104,17 +106,17 @@
 				<div class="row">
 					<div class="col-lg-6 collumn">
 						<h2>Paypal</h2>
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 							<input type="hidden" name="cmd" value="_s-xclick">
 							<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 							">
 							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 							<img alt="" border="0" src="https://www.paypalobjects.com/ru_RU/i/scr/pixel.gif" width="1" height="1">
-						</form>
+						</form> -->
 					</div>
 					<div class="col-lg-6 collumn">
 						<h2>Yandex</h2>
-<iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=ScreenGrabber%20Application&targets-hint=&default-sum=49&button-text=11&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=410012538146798" width="450" height="198" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+						<!-- <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=ScreenGrabber%20Application&targets-hint=&default-sum=49&button-text=11&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=410012538146798" width="450" height="198" frameborder="0" allowtransparency="true" scrolling="no"></iframe> -->
 					</div>
 				</div>
 			</div>
