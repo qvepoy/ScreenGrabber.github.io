@@ -26,7 +26,16 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<style>
+		body {
+			opacity: 0;
+			overflow-x: hidden;
+		}
+
+		html {
+			background-color: #fff;
+		}
+	</style>
 
 </head>
 
@@ -34,71 +43,65 @@
 	<div class="wrapper">
 		<div class="head background">
 			<div class="container">
-				<div class="row">
-					<table>
-						<tr>
-							<td><img class="block image" src="img/icon.png" alt=""></td>
-							<td>
-								<div class="block title">
-									<h1>ScreenGrabber</h1>
-									<p>Free and open source program that lets capture your screen</p>
-								</div>
-							</td>
-							<td class="info">
-								<div class="info_part">
-									<a class="lastDownload" href="#">
-										Download
-										<img src="img/icons/download.png" alt="">
-									</a>
-								</div>
-								<div class="info_part">
-									<p class="lastVersion">Last version :</p>
-									<img src="img/icons/version.png" alt="">
-								</div>
+				<div class="flex_container">
+					<div class="flex_block">
+						<img class="block image" src="img/icon.png" alt="">
+						<h1>ScreenGrabber</h1>
+						<p>Free and open source program that lets capture your screen</p>
+					</div>
+					<div class="flex_block">
+						<div class="info_part">
+							<a class="lastDownload" href="#">
+								Download
+								<img class="svg" src="img/svg/download.svg" alt="">
+							</a>
+						</div>
+						<div class="info_part">
+							<p class="lastVersion">Last version :</p>
+							<img class="svg" src="img/svg/version.svg" alt="">
+						</div>
 
-								<div class="info_part">
-									<p class="totalDownloads">Total downloads : </p>
-									<img src="img/icons/totaldownloads.png" alt="">
-								</div>
-								<div class="info_part">
-									<p class="lastSize">Size : </p>
-									<img src="img/icons/size.png" alt="">
-								</div>
-								<div class="info_part">
-									<a class="github" href="https://github.com/qvepoy/ScreenGrabber">
-										Source on Github
-										<img class="svg githubimg" src="img/svg/github.svg" alt="">
-									</a>
-								</div>
-							</td>
-						</tr>
-					</table>
+						<div class="info_part">
+							<p class="totalDownloads">Total downloads : </p>
+							<img class="svg" src="img/svg/downloads.svg" alt="">
+						</div>
+						<div class="info_part">
+							<p class="lastSize">Size : </p>
+							<img class="svg" src="img/svg/size.svg" alt="">
+						</div>
+						<div class="info_part">
+							<a class="github" href="https://github.com/qvepoy/ScreenGrabber">
+								Source on Github
+								<img class="svg" src="img/svg/github.svg" alt="">
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="links background">
-				<div class="link">
-					<a class="lastDownload" href="#">
+			<div class="link">
+				<a class="lastDownload" href="#">
 						Download
 						<p>for Windows 7+</p>
 					</a>
-					<img src="img/svg/windows.svg" alt="">
-				</div>
-				<div class="link">
-					<a href="https://github.com/qvepoy/ScreenGrabber">
+				<img src="img/svg/windows.svg" alt="">
+			</div>
+			<div class="link">
+				<a href="https://github.com/qvepoy/ScreenGrabber">
 						Source
 						<p>Github repository</p>
 					</a>
-					<img src="img/svg/github.svg" alt="">
-				</div>
-				<div class="link" id="donate">
-					<a href="#">
+				<img src="img/svg/github.svg" alt="">
+			</div>
+			<div class="link" id="donate">
+				<a href="#">
 						Donate
 						<p>PayPal</p>
 					</a>
-					<img src="img/svg/donate.svg" alt="">
-				</div>
+				<img src="img/svg/donate.svg" alt="">
+			</div>
 		</div>
 
 		<div class="donates background hidden" id="donates">
@@ -197,4 +200,5 @@
 	<script src="js/scripts.min.js"></script>
 
 </body>
+
 </html>

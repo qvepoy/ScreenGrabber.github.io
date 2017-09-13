@@ -7,21 +7,23 @@
 .head
 	height: 256px
 	margin-bottom: $distanse
-	table
-		height: 256px
-		width: 100%
-		td:first-child
-			width: 200px
+
+.flex_container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  .flex_block
+  	p
+  		font-size: 12px
+      color: $blue
+    .svg
+      width: 24px
+      height: 24px
+      path, circle
+        fill: $white
 
 .title
 	color: $white
-	h1
-		font-size: 50px
-		margin: 0
-		line-height: 50px
-	p
-		font-size: 12px
-		margin: 0
 
 .image
 	height: 168px
@@ -50,11 +52,10 @@
 			height: 24px
       width: 24px
 			margin: 2px
-  .githubimg
+  .svg
     width: 24px
     height: 24px
-    margin: 2px
-    path
+    path, circle
       fill: $white
 
 	.info_part:hover
